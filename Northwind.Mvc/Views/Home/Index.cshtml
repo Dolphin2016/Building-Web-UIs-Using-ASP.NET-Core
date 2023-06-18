@@ -19,18 +19,36 @@
                 <th>@Localizer["Order Total"]</th>
             </tr>
         </thead>
+        <div class="row">
+            <div class="col">
+                <h2>Live</h2>
+                <p class="alert alert-info">
+                    UTC: @DateTime.UtcNow.ToLongDateString() at
+                    @DateTime.UtcNow.ToLongTimeString()
+                </p>
+            </div>
+            <div class="col">
+                <h2>Cached</h2>
+                <p class="alert alert-secondary">
+                    <cache expires-after="@TimeSpan.FromSeconds(10)">
+                        UTC: @DateTime.UtcNow.ToLongDateString() at
+                        @DateTime.UtcNow.ToLongTimeString()
+                    </cache>
+                </p>
+            </div>
+        </div>
         <tbody>
-        @foreach (Order order in Model)
-        {
-            <tr>
-                <td>@order.OrderId</td>
-                <td>@order.OrderDate?.ToString("D")</td>
-                <td>@order.Customer?.CompanyName</td>
-                <td>@order.Customer?.Country</td>
-                <td>@order.OrderDetails.Count()</td>
-                <td>@order.OrderDetails.Sum(detail => detail.Quantity * detail.UnitPrice).ToString("C")</td>
-            </tr>
-        }            
+            @foreach (Order order in Model)
+            {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.OrderDate?.ToString("D")</td>
+                    <td>@order.Customer?.CompanyName</td>
+                    <td>@order.Customer?.Country</td>
+                    <td>@order.OrderDetails.Count()</td>
+                    <td>@order.OrderDetails.Sum(detail => detail.Quantity * detail.UnitPrice).ToString("C")</td>
+                </tr>
+            }
         </tbody>
     </table>
     <a id="endOfTable"></a>

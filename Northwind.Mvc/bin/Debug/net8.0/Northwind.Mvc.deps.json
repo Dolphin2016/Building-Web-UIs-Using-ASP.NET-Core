@@ -28,8 +28,8 @@
           "fr-FR/Northwind.Mvc.resources.dll": {
             "locale": "fr-FR"
           },
-          "ru-RU/Northwind.Mvc.resources.dll": {
-            "locale": "ru-RU"
+          "ru/Northwind.Mvc.resources.dll": {
+            "locale": "ru"
           }
         }
       },
