@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\PROJECTS\\C_SHARP_PROJECTS\\APPS AND SERVICES .NET 7\\Chapter15\\Northwind.Mvc\\Northwind.Mvc.csproj": {}
+  },
+  "projects": {
+    "D:\\PROJECTS\\C_SHARP_PROJECTS\\APPS AND SERVICES .NET 7\\Chapter15\\Northwind.Mvc\\Northwind.Mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PROJECTS\\C_SHARP_PROJECTS\\APPS AND SERVICES .NET 7\\Chapter15\\Northwind.Mvc\\Northwind.Mvc.csproj",
+        "projectName": "Northwind.Mvc",
+        "projectPath": "D:\\PROJECTS\\C_SHARP_PROJECTS\\APPS AND SERVICES .NET 7\\Chapter15\\Northwind.Mvc\\Northwind.Mvc.csproj",
+        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECTS\\C_SHARP_PROJECTS\\APPS AND SERVICES .NET 7\\Chapter15\\Northwind.Mvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23302.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23302.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23302.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23280.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23280.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.5.23303.2\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
