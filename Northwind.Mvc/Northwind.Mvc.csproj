@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	  <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <UserSecretsId>aspnet-Northwind.Mvc-557ce8bb-5d0d-4a2e-a752-82d2bda22e6b</UserSecretsId>
   </PropertyGroup>
 
@@ -14,5 +15,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.5.23280.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0-preview.5.23280.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Chapter02\Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj" />
+  </ItemGroup>	
 
 </Project>

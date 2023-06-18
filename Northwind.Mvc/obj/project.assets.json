@@ -1222,6 +1222,33 @@
             "rid": "win"
           }
         }
+      },
+      "Northwind.Common.DataContext.SqlServer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Northwind.Common.EntityModels.SqlServer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Northwind.Common.DataContext.SqlServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Northwind.Common.DataContext.SqlServer.dll": {}
+        }
+      },
+      "Northwind.Common.EntityModels.SqlServer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Northwind.Common.EntityModels.SqlServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Northwind.Common.EntityModels.SqlServer.dll": {}
+        }
       }
     }
   },
@@ -3345,6 +3372,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Northwind.Common.DataContext.SqlServer/1.0.0": {
+      "type": "project",
+      "path": "../../Chapter02/Northwind.Common.DataContext.SqlServer/Northwind.Common.DataContext.SqlServer.csproj",
+      "msbuildProject": "../../Chapter02/Northwind.Common.DataContext.SqlServer/Northwind.Common.DataContext.SqlServer.csproj"
+    },
+    "Northwind.Common.EntityModels.SqlServer/1.0.0": {
+      "type": "project",
+      "path": "../../Chapter02/Northwind.Common.EntityModels.SqlServer/Northwind.Common.EntityModels.SqlServer.csproj",
+      "msbuildProject": "../../Chapter02/Northwind.Common.EntityModels.SqlServer/Northwind.Common.EntityModels.SqlServer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3353,7 +3390,8 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.0-preview.5.23302.2",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.0-preview.5.23302.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0-preview.5.23280.1",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.0-preview.5.23280.1"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.0-preview.5.23280.1",
+      "Northwind.Common.DataContext.SqlServer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3387,10 +3425,15 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\PROJECTS\\C_SHARP_PROJECTS\\APPS AND SERVICES .NET 7\\Chapter02\\Northwind.Common.DataContext.SqlServer\\Northwind.Common.DataContext.SqlServer.csproj": {
+              "projectPath": "D:\\PROJECTS\\C_SHARP_PROJECTS\\APPS AND SERVICES .NET 7\\Chapter02\\Northwind.Common.DataContext.SqlServer\\Northwind.Common.DataContext.SqlServer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
+        "allWarningsAsErrors": true,
         "warnAsError": [
           "NU1605"
         ]

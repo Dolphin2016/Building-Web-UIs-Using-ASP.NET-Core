@@ -12,10 +12,25 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0-preview.5.23302.2",
           "Microsoft.AspNetCore.Identity.UI": "8.0.0-preview.5.23302.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.5.23280.1",
-          "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.5.23280.1"
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.5.23280.1",
+          "Northwind.Common.DataContext.SqlServer": "1.0.0"
         },
         "runtime": {
           "Northwind.Mvc.dll": {}
+        },
+        "resources": {
+          "en-GB/Northwind.Mvc.resources.dll": {
+            "locale": "en-GB"
+          },
+          "en-US/Northwind.Mvc.resources.dll": {
+            "locale": "en-US"
+          },
+          "fr-FR/Northwind.Mvc.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "ru-RU/Northwind.Mvc.resources.dll": {
+            "locale": "ru-RU"
+          }
         }
       },
       "Azure.Core/1.25.0": {
@@ -619,6 +634,23 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "Northwind.Common.DataContext.SqlServer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.5.23280.1",
+          "Northwind.Common.EntityModels.SqlServer": "1.0.0"
+        },
+        "runtime": {
+          "Northwind.Common.DataContext.SqlServer.dll": {}
+        }
+      },
+      "Northwind.Common.EntityModels.SqlServer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.5.23280.1"
+        },
+        "runtime": {
+          "Northwind.Common.EntityModels.SqlServer.dll": {}
+        }
       }
     }
   },
@@ -1110,6 +1142,16 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Northwind.Common.DataContext.SqlServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Northwind.Common.EntityModels.SqlServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

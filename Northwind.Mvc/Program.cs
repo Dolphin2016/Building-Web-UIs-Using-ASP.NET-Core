@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Northwind.Mvc.Data;
+using Packt.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,9 +13,22 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddControllersWithViews();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddControllersWithViews().AddViewLocalization();
+builder.Services.AddNorthwindContext();
 
 var app = builder.Build();
+
+string[] cultures = new[] { "en-US", "en-GB", "fr", "fr-FR", "ru" };
+
+RequestLocalizationOptions localizationOptions = new();
+
+// cultures[0] will be "en-US"
+localizationOptions.SetDefaultCulture(cultures[0])
+    .AddSupportedCultures(cultures) // globalization of data formats
+    .AddSupportedUICultures(cultures); // localization of UI
+
+app.UseRequestLocalization(localizationOptions);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
