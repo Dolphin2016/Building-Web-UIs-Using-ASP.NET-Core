@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Northwind.Mvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a43fffb2895c1453e9d7e50b23d32c55bebb4b1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+721dd31c415e58ffee26dc8846a7097ed5ae9cb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Northwind.Mvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Northwind.Mvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
