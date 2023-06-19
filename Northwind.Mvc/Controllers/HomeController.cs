@@ -50,6 +50,13 @@ public class HomeController : Controller
         return View(shipper);
     }
 
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult ProcessShipper(Shipper shipper)
+    {
+        return Json(shipper);
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
